@@ -87,4 +87,15 @@ async function listLabels(auth) {
     });
 }
 
-authorize().then(listLabels).catch(console.error);
+const getEmail = (req, res) => {
+    try {
+        console.log(req.params)
+        authorize().then(listLabels).catch(console.error);
+
+    }
+    catch (err) {
+        res.status(400).send(err.message)
+    }
+}
+
+module.exports = getEmail
