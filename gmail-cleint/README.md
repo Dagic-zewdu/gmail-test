@@ -1,4 +1,4 @@
-# gmail-test
+# gmail-cleint
 
 ## Project setup
 ```
