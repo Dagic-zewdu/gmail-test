@@ -87,10 +87,28 @@ async function listLabels(auth) {
     });
 }
 
-const getEmail = (req, res) => {
+const getEmail = async (req, res) => {
     try {
-        console.log(req.params)
-        authorize().then(listLabels).catch(console.error);
+
+        authorize().then((auth) => {
+            const gmail = google.gmail({ version: 'v1', auth });
+            const res = gmail.users.labels.list({
+                userId: 'me',
+                q: {
+                    subject: req.params.subject
+                }
+            }).then(Res => {
+                const labels = Res.data.labels;
+                if (!labels || labels.length === 0) {
+                    console.log('No labels found.');
+                    return;
+                }
+                console.log('Labels:');
+                res.send(labels)
+            })
+
+        }
+        ).catch(console.error);
 
     }
     catch (err) {
