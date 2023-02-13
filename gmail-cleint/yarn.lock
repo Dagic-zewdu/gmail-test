@@ -1217,6 +1217,23 @@
     "@types/qs" "*"
     "@types/serve-static" "*"
 
+"@types/gapi.auth2@0.0.56":
+  version "0.0.56"
+  resolved "https://registry.yarnpkg.com/@types/gapi.auth2/-/gapi.auth2-0.0.56.tgz#2f7031f79390b8401e7950d8277ada874fd2731c"
+  integrity sha512-kGaBtGVCqGS3Y05L56dGVlBpJflxLfwA0zpMQnQgGRFk1tsMPbQnogG51UQjt1vCuYfRO0Jd9/K5KDtzjAbMkA==
+  dependencies:
+    "@types/gapi" "*"
+
+"@types/gapi@*":
+  version "0.0.44"
+  resolved "https://registry.yarnpkg.com/@types/gapi/-/gapi-0.0.44.tgz#f097f7a0f59d63a59098a08a62a560ca168426fb"
+  integrity sha512-hsgJMfZ/pMwI15UlAYHMNwj8DRoigo1odhbPwEXdp19ZQwQAXbcRrpzaDsfc+9XM6RtGpvl4Ja7uW8A+KPCa7w==
+
+"@types/gapi@0.0.42":
+  version "0.0.42"
+  resolved "https://registry.yarnpkg.com/@types/gapi/-/gapi-0.0.42.tgz#772aa461660de09e7a78258064e075818373493c"
+  integrity sha512-kskWpouTGqutaIVRo/swiGnMVoRxOYdRwvaDrh0yavfR9vQoHvJJ7Enp4KE9MEGS8qF7F5KiP6bRNOYcCgRXCA==
+
 "@types/html-minifier-terser@^6.0.0":
   version "6.1.0"
   resolved "https://registry.npmmirror.com/@types/html-minifier-terser/-/html-minifier-terser-6.1.0.tgz#4fc33a00c1d0c16987b1a20cf92d20614c55ac35"
@@ -5786,6 +5803,14 @@ vue-eslint-parser@^8.0.1:
     lodash "^4.17.21"
     semver "^7.3.5"
 
+vue-gapi@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/vue-gapi/-/vue-gapi-2.1.2.tgz#76acc2b1167c8d81130624f6430a66667b4344d4"
+  integrity sha512-St8GdscorgJv1rm5Uq8N+LmsY9WY3o9j290ZCUipMKCkr1YdUPW/h9W6MJugPb0uQ6eIUPN8ouHSa+zfOEfdbg==
+  dependencies:
+    "@types/gapi" "0.0.42"
+    "@types/gapi.auth2" "0.0.56"
+
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"
   resolved "https://registry.npmmirror.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
@@ -5812,6 +5837,11 @@ vue-template-es2015-compiler@^1.9.0:
   version "1.9.1"
   resolved "https://registry.npmmirror.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
+
+vue3-google-login@^2.0.14:
+  version "2.0.14"
+  resolved "https://registry.yarnpkg.com/vue3-google-login/-/vue3-google-login-2.0.14.tgz#bd3e582288a7626caa36023f8c628dec756d49e6"
+  integrity sha512-pgrFETY4TWgtAxTv3G7BkfoKUs8+zWB2WRc+jhGpy3fVtU1ll1vAdjGXiQfZ5XADfAJLZ2zNTDJp/0cPF3z7BQ==
 
 vue@^3.2.13:
   version "3.2.47"
